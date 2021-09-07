@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:multiple_state_managements/util/widget/movie_poster_name.dart';
-import 'package:multiple_state_managements/util/widget/styles/colors.dart';
+import 'package:multiple_state_managements/util/styles/colors.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:multiple_state_managements/core/route.dart';
 import 'package:multiple_state_managements/screens/home_screen.dart';
-import 'package:multiple_state_managements/util/widget/styles/colors.dart';
+import 'package:multiple_state_managements/util/styles/colors.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class SplashScreen extends StatelessWidget {
