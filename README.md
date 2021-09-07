@@ -1,4 +1,4 @@
-# multible_state_managments
+# multiple_state_managements
 
 A new Flutter project.
 
