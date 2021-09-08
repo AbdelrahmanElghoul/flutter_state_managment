@@ -1,10 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:multiple_state_managements/util/styles/colors.dart';
 
 abstract class TextStyles{
 
   static TextStyle defaultStyle=TextStyle();
-  static TextStyle subStyle=TextStyle();
+  static TextStyle subStyle=TextStyle(
+    color: AppColors.secondaryfont
+  );
   static TextStyle headerStyle=TextStyle(
     fontWeight: FontWeight.bold
   );

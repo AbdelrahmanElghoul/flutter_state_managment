@@ -30,7 +30,6 @@ class MovieCard extends StatelessWidget {
             child: Image.network(
               "https://storage.googleapis.com/nrpassets/uploads/articles/1568805897-BeFunky-collage_26.jpg",
               fit: BoxFit.cover,
-
             ),
           ),
           SizedBox(width: 5.w),
@@ -44,7 +43,7 @@ class MovieCard extends StatelessWidget {
                 // mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
                       Expanded(
@@ -77,59 +76,31 @@ class MovieCard extends StatelessWidget {
                     style: TextStyles.defaultStyle,
                     presetFontSizes: TextStyles.defaultFontSize,
                   ),
-                  Wrap(
-                    alignment: WrapAlignment.center,
-                    spacing: 5.w,
-                    runSpacing: 5.h,
-                    children: [
-                      Container(
-                        padding: EdgeInsets.symmetric(
-                            vertical: 5.h, horizontal: 10.w),
-                        decoration: BoxDecoration(
-                            color: AppColors.main.withOpacity(0.5),
-                            borderRadius: BorderRadius.circular(100)),
-                        child: AutoSizeText(
-                          "Drama",
-                          style: TextStyles.subStyle,
-                          presetFontSizes: TextStyles.subFontSize,
-                        ),
-                      ),
-                      Container(
-                        padding: EdgeInsets.symmetric(
-                            vertical: 5.h, horizontal: 10.w),
-                        decoration: BoxDecoration(
-                            color: AppColors.main.withOpacity(0.5),
-                            borderRadius: BorderRadius.circular(100)),
-                        child: AutoSizeText(
-                          "Drama 123123",
-                          style: TextStyles.subStyle,
-                          presetFontSizes: TextStyles.subFontSize,
-                        ),
-                      ),
-                      Container(
-                        padding: EdgeInsets.symmetric(
-                            vertical: 5.h, horizontal: 10.w),
-                        decoration: BoxDecoration(
-                            color: AppColors.main.withOpacity(0.5),
-                            borderRadius: BorderRadius.circular(100)),
-                        child: AutoSizeText(
-                          "Drama 123123123123213",
-                          style: TextStyles.subStyle,
-                          presetFontSizes: TextStyles.subFontSize,
-                        ),
-                      ), Container(
-                        padding: EdgeInsets.symmetric(
-                            vertical: 5.h, horizontal: 10.w),
-                        decoration: BoxDecoration(
-                            color: AppColors.main.withOpacity(0.5),
-                            borderRadius: BorderRadius.circular(100)),
-                        child: AutoSizeText(
-                          "Drama 123123123123213",
-                          style: TextStyles.subStyle,
-                          presetFontSizes: TextStyles.subFontSize,
-                        ),
-                      ),
-                    ],
+                  Spacer(),
+                  Flexible(
+                    fit: FlexFit.tight,
+                    child: ListView.builder(
+                      itemCount: 3,
+                      shrinkWrap: true,
+                      scrollDirection: Axis.horizontal,
+                      itemBuilder: (_, i) {
+                        return Container(
+                          margin: EdgeInsets.only(right: 5),
+                          padding: EdgeInsets.symmetric(
+                              vertical: 5.h, horizontal: 10.w),
+                          decoration: BoxDecoration(
+                              color: AppColors.main.withOpacity(0.5),
+                              borderRadius: BorderRadius.circular(100)),
+                          child: Center(
+                            child: AutoSizeText(
+                              "Drama",
+                              style: TextStyles.subStyle,
+                              presetFontSizes: TextStyles.subFontSize,
+                            ),
+                          ),
+                        );
+                      },
+                    ),
                   )
                 ],
               ),
