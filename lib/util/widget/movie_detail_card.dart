@@ -6,7 +6,7 @@ import 'package:multiple_state_managements/core/util.dart';
 import 'package:multiple_state_managements/util/styles/colors.dart';
 import 'package:multiple_state_managements/util/styles/text_style.dart';
 
-class MovieCard extends StatelessWidget {
+class MovieDetailCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(

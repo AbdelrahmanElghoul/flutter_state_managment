@@ -5,7 +5,7 @@ import 'package:multiple_state_managements/core/route.dart';
 import 'package:multiple_state_managements/core/util.dart';
 import 'package:multiple_state_managements/util/styles/colors.dart';
 import 'package:multiple_state_managements/util/styles/text_style.dart';
-import 'package:multiple_state_managements/util/widget/movie_card.dart';
+import 'package:multiple_state_managements/util/widget/movie_detail_card.dart';
 import 'package:multiple_state_managements/util/widget/review_widget.dart';
 
 import 'movie_reviews_screen.dart';
@@ -41,7 +41,7 @@ class MovieDetailsScreen extends StatelessWidget {
             AnimatedContainer(
               duration: Duration(seconds: 0),
               constraints: BoxConstraints(maxHeight: 150.h, minHeight: 50.h),
-              child: MovieCard(),
+              child: MovieDetailCard(),
             ),
             SizedBox(height: 15.h),
             //-------description--------

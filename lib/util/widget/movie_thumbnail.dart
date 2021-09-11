@@ -7,12 +7,12 @@ import 'package:multiple_state_managements/util/styles/colors.dart';
 
 import 'package:multiple_state_managements/util/styles/text_style.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-class MoviePosterName extends StatelessWidget {
+class MovieThumbnail extends StatelessWidget {
 
   final String imgUrl;
   final String name;
 
-  MoviePosterName({required this.name,required this.imgUrl});
+  MovieThumbnail({required this.name,required this.imgUrl});
 
   @override
   Widget build(BuildContext context) {
