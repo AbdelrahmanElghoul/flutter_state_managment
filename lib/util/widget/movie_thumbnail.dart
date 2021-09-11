@@ -14,6 +14,7 @@ class MovieThumbnail extends StatelessWidget {
 
   MovieThumbnail({required this.name,required this.imgUrl});
 
+
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
