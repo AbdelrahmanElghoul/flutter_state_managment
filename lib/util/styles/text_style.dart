@@ -6,7 +6,7 @@ abstract class TextStyles{
 
   static TextStyle defaultStyle=TextStyle();
   static TextStyle subStyle=TextStyle(
-    color: AppColors.secondaryfont
+    color: AppColors.secondaryFont
   );
   static TextStyle headerStyle=TextStyle(
     fontWeight: FontWeight.bold

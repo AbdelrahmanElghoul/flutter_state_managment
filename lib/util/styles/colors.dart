@@ -1,12 +1,13 @@
 import 'package:flutter/material.dart';
 
 abstract class AppColors {
-  static Color main = Color(0xFFBE8500);
-  static Color appBar = Color(0xFFBE8500);
-  static Color background = Color(0xFFFFF8F3);
-  static Color secondaryBackground = Color(0xFFFFFCFA);
-  static Color secondaryfont = Color(0xFF3F3F3F);
-  static Color favourite = Color(0xFFD72828);
+  static Color main = Color(0xFF3A84BD);
+  static Color appBar = Color(0xFF4d90c3);
+  static Color mainLight=Color(0xFFedf3f9);
+  static Color background = Color(0xFFf9fbfc);
+  static Color secondaryBackground = Color(0xFFFFFFFF);
+  static Color secondaryFont = Color(0xFF838383);
+  static Color favourite =Color(0xFFde4f44);
 
 
 }

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:multiple_state_managements/util/widget/movie_poster_name.dart';
-import 'package:multiple_state_managements/util/styles/colors.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -10,9 +9,8 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: AppColors.background,
+
       appBar: AppBar(
-        backgroundColor: AppColors.appBar,
         centerTitle: false,
         title: Text("Home"),
       ),

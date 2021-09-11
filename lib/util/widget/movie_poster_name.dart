@@ -2,7 +2,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:multiple_state_managements/core/route.dart';
-import 'package:multiple_state_managements/screens/movie_details_screen.dart';
+import 'package:multiple_state_managements/screens/movie/movie_details_screen.dart';
 import 'package:multiple_state_managements/util/styles/colors.dart';
 
 import 'package:multiple_state_managements/util/styles/text_style.dart';
@@ -22,7 +22,7 @@ class MoviePosterName extends StatelessWidget {
       child: Container(
         margin: EdgeInsets.all(1),
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(25.h),
+          borderRadius: BorderRadius.circular(15.h),
           color:AppColors.secondaryBackground,
           boxShadow: [
             BoxShadow(
