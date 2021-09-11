@@ -15,7 +15,7 @@ class SplashScreen extends StatelessWidget {
       }),
     );
     return Scaffold(
-      backgroundColor: AppColors.background,
+
       body: Center(
         child: Icon(
           Icons.movie_filter,

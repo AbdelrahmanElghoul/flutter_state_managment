@@ -2,6 +2,7 @@ import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:multiple_state_managements/core/util.dart';
 import 'package:multiple_state_managements/util/styles/colors.dart';
 import 'package:multiple_state_managements/util/styles/text_style.dart';
 
@@ -48,7 +49,7 @@ class MovieCard extends StatelessWidget {
                     children: [
                       Expanded(
                         child: AutoSizeText(
-                          "Title\n1",
+                          "Title1",
                           style: TextStyles.headerStyle,
                           presetFontSizes: TextStyles.headerFontSize,
                           textAlign: TextAlign.start,
@@ -61,7 +62,7 @@ class MovieCard extends StatelessWidget {
                         alignment: Alignment.center,
                         padding: EdgeInsets.all(5),
                         decoration: BoxDecoration(
-                            color: AppColors.main.withOpacity(0.2),
+                            color: AppColors.mainLight,
                             borderRadius: BorderRadius.circular(100)),
                         child: AutoSizeText(
                           "8",
@@ -72,7 +73,7 @@ class MovieCard extends StatelessWidget {
                     ],
                   ),
                   AutoSizeText(
-                    DateTime.now().toString(),
+                    dateFormat(DateTime.now()),
                     style: TextStyles.defaultStyle,
                     presetFontSizes: TextStyles.defaultFontSize,
                   ),
@@ -89,7 +90,7 @@ class MovieCard extends StatelessWidget {
                           padding: EdgeInsets.symmetric(
                               vertical: 5.h, horizontal: 10.w),
                           decoration: BoxDecoration(
-                              color: AppColors.main.withOpacity(0.5),
+                              color: AppColors.mainLight,
                               borderRadius: BorderRadius.circular(100)),
                           child: Center(
                             child: AutoSizeText(
