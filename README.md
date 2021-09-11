@@ -1,7 +1,7 @@
-<<<<<<< HEAD
+
 # multiple_state_managements
 
-A new Flutter project.
+different state management applied to movie app
 
 ## Getting Started
 
@@ -18,4 +18,4 @@ samples, guidance on mobile development, and a full API reference.
 =======
 # flutter_state_managment
 different state management applied to movie app
->>>>>>> 8986624ce736cb65b26c117e07815819ed966918
+
