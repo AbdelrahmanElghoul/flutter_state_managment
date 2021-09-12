@@ -8,6 +8,7 @@ abstract class AppColors {
   static Color secondaryBackground = Color(0xFFFFFFFF);
   static Color secondaryFont = Color(0xFF838383);
   static Color favourite =Color(0xFFde4f44);
+  static Color yellow =Color(0xffdda82c);
 
 
 }

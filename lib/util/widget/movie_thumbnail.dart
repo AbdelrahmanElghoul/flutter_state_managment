@@ -24,7 +24,7 @@ class MovieThumbnail extends StatelessWidget {
         margin: EdgeInsets.all(1),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(15.h),
-          color:AppColors.secondaryBackground,
+          color:AppColors.main,
           boxShadow: [
             BoxShadow(
               color: Colors.grey.withOpacity(0.5),
@@ -37,23 +37,21 @@ class MovieThumbnail extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Expanded(
-                flex: 7,
-                child: Padding(
-                  padding: const EdgeInsets.only(bottom:5.0,top: 5,left: 5,right: 5),
-                  child: Image.network(this.imgUrl,fit: BoxFit.contain,
-                      loadingBuilder:(BuildContext context, Widget child,ImageChunkEvent? loadingProgress) {
-                        if (loadingProgress == null) return child;
-                        return Center(
-                          child: CircularProgressIndicator(
-                            value: loadingProgress.expectedTotalBytes != null ?
-                            loadingProgress.cumulativeBytesLoaded / (loadingProgress.expectedTotalBytes??1)
-                                : null,
-                          ),
-                        );
-                      }
-                  ),
-                )),
+            Padding(
+              padding: const EdgeInsets.only(bottom:5.0,top: 5,left: 5,right: 5),
+              child: Image.network(this.imgUrl,fit: BoxFit.contain,
+                  loadingBuilder:(BuildContext context, Widget child,ImageChunkEvent? loadingProgress) {
+                    if (loadingProgress == null) return child;
+                    return Center(
+                      child: CircularProgressIndicator(
+                        value: loadingProgress.expectedTotalBytes != null ?
+                        loadingProgress.cumulativeBytesLoaded / (loadingProgress.expectedTotalBytes??1)
+                            : null,
+                      ),
+                    );
+                  }
+              ),
+            ),
 
             Expanded(
               flex: 3,

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:multiple_state_managements/core/service/api_constant.dart';
 import 'package:multiple_state_managements/util/widget/movie_thumbnail.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -24,7 +25,7 @@ class HomeScreen extends StatelessWidget {
             child: GridView.builder(
               gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                 crossAxisCount: 3,
-                childAspectRatio: 0.8,
+                childAspectRatio: 0.5,
                 crossAxisSpacing: 10.h,
                 mainAxisSpacing: 10.h,
               ),
@@ -32,9 +33,8 @@ class HomeScreen extends StatelessWidget {
               itemBuilder: (_, i) {
                 return MovieThumbnail(
                     name: "name ${i * i * i * i * i * i}",
-                    imgUrl:
-                        "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Chrome_icon_%28September_2014%29.svg/1200px-Google_Chrome_icon_%28September_2014%29.svg.png");
-              },
+                    imgUrl:APIUrl.imgPath +"6FfCtAuVAW8XJjZ7eWeLibRLWTw.jpg");
+                },
             ),
           ),
         ),

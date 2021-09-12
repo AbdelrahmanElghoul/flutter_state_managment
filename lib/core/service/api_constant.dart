@@ -1,11 +1,7 @@
-
-
 abstract class APIUrl {
-  //TODO change domain onRelease
-  static String domain = 'domain';
-  static String imgPath = domain;
-  static String get baseUrl =>
-      "$domain";
+  static String _domain = 'https://api.themoviedb.org/3/movie/';
+  static String imgPath = "https://image.tmdb.org/t/p/w500/";
+  static String get baseUrl => "$_domain";
 }
 
 class APIHeaders {
@@ -15,10 +11,10 @@ class APIHeaders {
     'Content-Type': "application/json"
   };
 
-  // Map<String, String> userHeader = {
-  //   'Authorization':
-  //       "bearer ${SPreference.getString(PreferenceKey.USER_TOKEN)}",
-  //   'Accept': "application/json",
-  //   'Content-Type': "application/json"
-  // };
+// Map<String, String> userHeader = {
+//   'Authorization':
+//       "bearer ${SPreference.getString(PreferenceKey.USER_TOKEN)}",
+//   'Accept': "application/json",
+//   'Content-Type': "application/json"
+// };
 }
