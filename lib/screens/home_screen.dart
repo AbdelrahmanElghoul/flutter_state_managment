@@ -1,8 +1,5 @@
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:multiple_state_managements/core/service/api_constant.dart';
-import 'package:multiple_state_managements/util/dialog/notification_dialog.dart';
-import 'package:multiple_state_managements/util/util_methods.dart';
 import 'package:multiple_state_managements/util/widget/drawer/home_drawer.dart';
 import 'package:multiple_state_managements/util/widget/movie_thumbnail.dart';
 import 'package:pull_to_refresh/pull_to_refresh.dart';
@@ -11,15 +8,13 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       appBar: AppBar(
         centerTitle: false,
         title: Text("Home"),
-
       ),
       drawer: HomeDrawer(),
-      onDrawerChanged: (drawerState){
+      onDrawerChanged: (drawerState) {
         print(drawerState);
       },
       drawerEnableOpenDragGesture: true,

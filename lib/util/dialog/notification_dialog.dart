@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:multiple_state_managements/core/route.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:multiple_state_managements/util/styles/text_style.dart';
 
@@ -26,7 +25,7 @@ class NotificationDialog extends StatelessWidget {
                   children: [
                     SizedBox(height: 10),
                     Text(
-                      title??'',
+                      title ?? '',
                       textAlign: TextAlign.center,
                       style: TextStyles.headerStyle.copyWith(letterSpacing: 0),
                     ),
