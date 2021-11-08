@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return ScreenUtilInit(
       designSize: Size(375, 812),
-      builder: () =>  MaterialApp(
+      builder: () => MaterialApp(
         navigatorKey: Routes.instance.navigationKey,
         title: 'Flutter Demo',
         theme: AppTheme.theme,

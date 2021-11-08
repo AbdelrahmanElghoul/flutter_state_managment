@@ -1,12 +1,12 @@
 abstract class APIUrl {
   static String _domain = 'https://api.themoviedb.org/3/movie/';
   static String imgPath = "https://image.tmdb.org/t/p/w500/";
-  static String get baseUrl => "$_domain";
+  static String get baseUrl => "https://dev.makwaapp.com/api/V1/en";
 }
 
-class APIHeaders {
+class ApiHeaders {
   //
-  final Map<String, String> defaultHeader = {
+  final Map<String, dynamic> defaultHeader = {
     'Accept': "application/json",
     'Content-Type': "application/json"
   };

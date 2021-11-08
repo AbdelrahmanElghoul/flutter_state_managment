@@ -11,7 +11,6 @@ class TagWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  Container(
-
       padding: EdgeInsets.symmetric(
           vertical: 3.h, horizontal: 10.w),
       decoration: BoxDecoration(

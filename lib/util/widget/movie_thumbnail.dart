@@ -22,9 +22,13 @@ class MovieThumbnail extends StatelessWidget {
       onTap: ()=>Routes.instance.push(MovieDetailsScreen()),
       child: Container(
         margin: EdgeInsets.all(1),
+        clipBehavior: Clip.antiAlias,
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(15.h),
-          color:AppColors.main,
+          borderRadius: BorderRadius.only(
+            topLeft: Radius.circular(15.h),
+            topRight: Radius.circular(15.h),
+          ),
+          color:AppColors.secondaryBackground,
           boxShadow: [
             BoxShadow(
               color: Colors.grey.withOpacity(0.5),
@@ -37,24 +41,21 @@ class MovieThumbnail extends StatelessWidget {
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            Padding(
-              padding: const EdgeInsets.only(bottom:5.0,top: 5,left: 5,right: 5),
-              child: Image.network(this.imgUrl,fit: BoxFit.contain,
-                  loadingBuilder:(BuildContext context, Widget child,ImageChunkEvent? loadingProgress) {
-                    if (loadingProgress == null) return child;
-                    return Center(
-                      child: CircularProgressIndicator(
-                        value: loadingProgress.expectedTotalBytes != null ?
-                        loadingProgress.cumulativeBytesLoaded / (loadingProgress.expectedTotalBytes??1)
-                            : null,
-                      ),
-                    );
-                  }
-              ),
+            Image.network(this.imgUrl,fit: BoxFit.contain,
+                loadingBuilder:(BuildContext context, Widget child,ImageChunkEvent? loadingProgress) {
+                  if (loadingProgress == null) return child;
+                  return Center(
+                    child: CircularProgressIndicator(
+                      value: loadingProgress.expectedTotalBytes != null ?
+                      loadingProgress.cumulativeBytesLoaded / (loadingProgress.expectedTotalBytes??1)
+                          : null,
+                    ),
+                  );
+                }
             ),
 
             Expanded(
-              flex: 3,
+
               child: Center(
                 child: AutoSizeText(this.name,
                     maxLines: 2,
