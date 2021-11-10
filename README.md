@@ -10,6 +10,6 @@ master will be cloned to use different state managment and each state managment 
 
 
 # note
-to avoid lag in drawer animation run using this comman : flutter run --profile --cache-sksl 
+to avoid lag in drawer animation run using this command : flutter run --profile --cache-sksl 
 
 
